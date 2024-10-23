@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Berita</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+
+        <form id="search-form" onsubmit="return searchArticles(event)">
+            <input type="text" id="search-input" placeholder="Cari berita..." required>
+            
+        </form>
+
+        <h1>Portal Berita Terpercaya</h1>
+        <nav>
+            <ul>
+                <li><a href="#berita-terbaru">Berita Terbaru</a></li>
+                <li><a href="#kategori">Kategori</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    
+    
+    <main>
+        <section id="search-results">
+            <h2>Hasil Pencarian</h2>
+            <!-- Hasil pencarian akan ditampilkan di sini -->
+        </section>
+        <section id="slider">
+            <h2>Slider Berita</h2>
+            <div class="slider-container">
+                <div class="slide active">
+                    <img src="poster1.jpg" alt="Banjir Besar Melanda Kota X" class="poster">
+                    <h3>Banjir Besar Melanda Kota X</h3>
+                    <p>Kota X mengalami banjir besar akibat hujan deras selama 3 hari berturut-turut.</p>
+                </div>
+                <div class="slide">
+                    <img src="opjeck/gambar/OIP.jpg" alt="Perayaan Tahun Baru di Tengah Pandemi" class="poster">
+                    <h3>Perayaan Tahun Baru di Tengah Pandemi</h3>
+                    <p>Pemerintah telah mengeluarkan aturan khusus untuk pencegahan Covid-19 pada masa Hari Raya Natal dan Tahun Baru. Aturan ini merupakan tindak lanjut dari rencana pemerintah untuk memberlakukan Pembatasan Kegiatan Masyarakat (PPKM) Level 3 untuk seluruh wilayah Indonesia selama Natal dan Tahun Baru. PPKM Level 3 akan mulai berlaku di seluruh Indonesia pada 24 Desember 2021 sampai 2 Januari 2022. Melalui Instruksi Menteri Dalam Negeri (Inmendagri) Nomor 62 Tahun 2021, pemerintah berharap bisa mencegah gelombang baru Covid-19 yang biasanya muncul setelah periode libur panjang.</p>
+                </div>
+                <div class="slide">
+                    <img src="poster3.jpg" alt="Olahraga di Masa Pandemi" class="poster">
+                    <h3>Olahraga di Masa Pandemi</h3>
+                    <p>Berbagai cabang olahraga mulai kembali diadakan dengan protokol kesehatan.</p>
+                </div>
+                <button id="prev" onclick="changeSlide(-1)">&#10094;</button>
+                <button id="next" onclick="changeSlide(1)">&#10095;</button>
+            </div>
+        </section>
+    </main>
+
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+        </div>
+    </div>
+
+    <div class="more-news">
+        <h2>Lihat Berita Lain</h2>
+        <ul>
+            <li><a href="#">Berita 1</a></li>
+            <li><a href="#">Berita 2</a></li>
+            <li><a href="#">Berita 3</a></li>
+            <li><a href="#">Berita 4</a></li>
+        </ul>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Portal Berita Terpercaya | <a href="#kontak">Kontak</a></p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+body {
+    font-family: 'Arial', sans-serif; /* Menggunakan font yang lebih modern */
+    line-height: 1.6; /* Meningkatkan jarak antar baris */
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4; /* Warna latar belakang yang lebih terang */
+    color: #333; /* Warna teks yang lebih gelap untuk kontras yang baik */
+}
+
+header {
+    background: #007BFF; /* Warna latar belakang header */
+    color: white; /* Warna teks header */
+    padding: 20px; /* Ruang dalam header */
+    text-align: center; /* Menyelaraskan teks di tengah */
+}
+
+h2 {
+    margin: 20px 0; /* Menambahkan margin untuk judul */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    padding: 20px;
+}
+
+
+article {
+    margin-bottom: 20px;
+}
+
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+.slider-container {
+    position: relative; /* Mengatur posisi relatif untuk tombol navigasi */
+    overflow: hidden; /* Menyembunyikan bagian yang melampaui kontainer */
+}
+
+.slide {
+    display: none; /* Menyembunyikan semua slide secara default */
+    text-align: center; /* Menyelaraskan konten slide di tengah */
+}
+
+.slide.active {
+    display: block; /* Menampilkan slide aktif */
+}
+
+.poster {
+    width: 80%; /* Mengatur lebar gambar menjadi 80% dari kontainer */
+    max-width: 400px; /* Menetapkan lebar maksimum untuk gambar */
+    height: auto; /* Memastikan tinggi gambar otomatis sesuai proporsi */
+    border-radius: 5px; /* Menambahkan sudut yang melengkung pada gambar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan pada gambar */
+    margin: 0 auto; /* Mengatur margin otomatis untuk memusatkan gambar */
+}
+
+button {
+    background-color: #007BFF; /* Warna latar belakang tombol */
+    color: white; /* Warna teks tombol */
+    border: none; /* Menghapus border default */
+    border-radius: 5px; /* Menambahkan sudut yang melengkung pada tombol */
+    padding: 10px 15px; /* Ruang dalam tombol */
+    cursor: pointer; /* Mengubah kursor saat hover */
+    transition: background-color 0.3s; /* Animasi saat hover */
+}
+
+button:hover {
+    background-color: #0056b3; /* Warna saat hover */
+}
+
+#prev {
+    left: 10px;
+}
+
+#next {
+    right: 10px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+#search-form input {
+    padding: 10px;
+    width: 200px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#search-results {
+    margin-top: 20px; /* Menambahkan margin atas untuk hasil pencarian */
+    padding: 15px; /* Ruang dalam untuk hasil pencarian */
+    background-color: white; /* Warna latar belakang hasil pencarian */
+    border-radius: 5px; /* Menambahkan sudut yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+}
+
+#search-results article {
+    margin-bottom: 15px; /* Menambahkan jarak antara artikel */
+    padding: 10px; /* Ruang dalam untuk artikel */
+    border: 1px solid #e0e0e0; /* Border ringan untuk artikel */
+    border-radius: 5px; /* Menambahkan sudut yang melengkung */
+}
+
+@media (max-width: 768px) {
+    #search-form input {
+        width: 100%; /* Mengatur lebar input agar penuh pada perangkat kecil */
+    }
+
+    button {
+        width: 100%; /* Mengatur lebar tombol agar penuh pada perangkat kecil */
+    }
+}
+
+.more-news {
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */
+    padding: 20px; /* Ruang dalam untuk menu */
+    border-radius: 5px; /* Sudut yang melengkung */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan */
+    margin-top: 20px; /* Jarak atas dari konten sebelumnya */
+}
+
+.more-news h2 {
+    margin-bottom: 15px; /* Jarak bawah untuk judul */
+}
+
+.more-news ul {
+    list-style-type: none; /* Menghapus bullet dari daftar */
+    padding: 0; /* Menghapus padding default */
+}
+
+.more-news li {
+    margin-bottom: 10px; /* Jarak antara item daftar */
+}
+
+.more-news a {
+    text-decoration: none; /* Menghapus garis bawah pada tautan */
+    color: #007BFF; /* Warna teks tautan */
+    transition: color 0.3s; /* Animasi saat hover */
+}
+
+.more-news a:hover {
+    color: #0056b3; /* Warna saat hover */
+}
